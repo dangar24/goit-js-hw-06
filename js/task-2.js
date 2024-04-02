@@ -12,7 +12,7 @@ class Storage {
     removeItem(itemToRemove) {
         for (let i = 0; i < this.#items.length; i+=1) {
             if (this.#items[i] === itemToRemove) {
-                this.#items.splice(1, i)
+                this.#items.splice(i, 1)
             } 
         }
     }
